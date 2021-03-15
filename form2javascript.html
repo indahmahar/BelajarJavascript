@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+</head>
+<!-- Bagian dari header untuk menampilkan judulnya -->
+	<script language = "javascript"> // Menggunkanan bahasa javascript
+	
+		function test () { // mendeklarasikan objek variabel test 
+			var val1=document.kirim. T1. value //pendeklarasian variabel nilai 1 terhadap program
+			if (val1%2==0)
+
+				document.kirim.T2. value="bilangan genap"
+			else
+				document.kirim.T2. value="bilangan ganjil"
+		} 
+	</script>
+	<body>
+
+		<form method="POST" name="kirim">
+
+			<p>BIL <input type="text" name="T1" size="20"> Merupakan BIL <input type="text" name="T2" size="20"> </p> <!-- menampilkan kotak dialog inputannya  -->
+
+			<p><input type="button" name="B1" value="TEBAK" onclick=test()> </p> <!-- Menampilkan hasil dari button tebak dengan metode onclick -->
+
+		</form>
+	</body>
+	</html>

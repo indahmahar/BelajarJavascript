@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Objek document</title>
+</head>
+<!-- Bagian dari header untuk menampilkan judulnya -->
+<body>
+		<script language = "javascript"> // Menggunkanan bahasa javascript
+			function ubahWarnaLB(warna) { //Menampilkan fungsi objek  
+				document.bgColor = warna; 
+			}
+			function ubahWarnaLD(warna) {
+				document.fgColor = warna;
+			}
+		</script>
+		<h1>TES</h1> <!-- Menampilkan tulisan TES -->
+		<form> 
+			<input type="button"  value="Latar Belakang Hijau" onclick="ubahWarnaLB('green')"> <!-- Menampilkan button Mengubah menjadi latar belakang hijau -->
+
+			<input type="button" value="Latar Belakang Putih" onclick="ubahWarnaLB('white')"> <!-- Menampilkan button Mengubah menjadi latar belakang putih -->
+
+			<input type="button" value="Teks Kuning" onclick="ubahWarnaLD('yellow')"> <!-- Menampilkan button Mengubah warna tulisan TES menjadi warna kuning -->
+
+			<input type="button" value="Teks Biru" onclick="ubahWarnaLD('blue')"> <!-- Menampilkan button Mengubah warna tulisan TES menjadi waran bitu-->
+		</form>
+	</body> 
+	</html>

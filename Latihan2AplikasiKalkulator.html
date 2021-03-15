@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kalkulator</title>
+</head>
+<script language="Javascript"> //printing tes message
+		function tambah() { // Membuat suatu fungsi
+		var val1=document.kirim.T1.value // pendeklarasian varibel1 terhadap program
+		var val2=document.kirim.T2.value // pendeklarasian variabel2 terhadap program
+		document.kirim.T3.value=(val1/1+val2/1) //perhitungan terhdap variabel1 dan variabel2 untuk penjumlahan
+	}
+		function kurang() { // Memebuat suatu fungsi
+		var val1=document.kirim.T1.value // pendeklarasian varabel1 terhadap program
+		var val2=document.kirim.T2.value // pendeklarasian varabel2 terhadap program
+		document.kirim.T3.value=(val1-val2) //perhitungan terhdap variabel1 dan variabel2 untuk pengurangan
+	}
+		function kali() {  // Memebuat suatu fungsi
+		var val1=document.kirim.T1.value // pendeklarasian varabel1 terhadap program
+		var val2=document.kirim.T2.value // pendeklarasian varabel2 terhadap program
+		document.kirim.T3.value=(val1*val2) //perhitungan terhdap variabel1 dan variabel2 untuk perkalian
+	}
+		function bagi() { // Memebuat suatu fungsi
+		var val1=document.kirim.T1.value // pendeklarasian varabel1 terhadap program
+		var val2=document.kirim.T2.value // pendeklarasian varabel2 terhadap program
+		document.kirim.T3.value=(val1/val2) //perhitungan terhdap variabel1 dan variabel2 untuk pembagian
+	}
+</script>
+<body>
+	<form method="POST" name="kirim"> <!-- Terdapat sebuah method post untuk mengirim nilai variabel-->
+		<p>
+			Bilangan 1 <input type="text" name="T1" size="20"><br><br> <!-- Pembuatan input text yang berbentuk text box-->
+			Bilangan 2 <input type="text" name="T2" size="20"><br> <!-- Pembuatan input text yang berbentuk text box-->
+			<p>
+				<input type="button" value="+" name="b1" onclick=tambah()> <!-- Pembuatan botton + yang dimana berfungsi one klick-->
+				<input type="button" value="-" name="b2" onclick=kurang()> <!-- Pembuatan botton - yang dimana berfungsi one klick-->
+				<input type="button" value="x" name="b3" onclick=kali()>   <!-- Pembuatan botton * yang dimana berfungsi one klick-->
+				<input type="button" value="/" name="b4" onclick=bagi()>   <!-- Pembuatan botton / yang dimana berfungsi one klick-->
+			</p>
+			Hasil <input type="text" name="T3" size="20"><br></p>	<!-- Pembuatan input text hasil berbentuk text box-->
+		</form>
+	</body>
+	</html>

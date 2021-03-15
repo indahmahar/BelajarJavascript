@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh program javascript</title>
+</head>
+<script language ="javascript">
+	function test(){
+		// mendeklarasikan variabel val1 dam val2 lalu mengambil sebuah inputan dari pengguna
+		val1=window.prompt("Nilai 1 : ")
+		val2=window.prompt("Nilai 2 : ")
+		document.write("<br>"+"val1==val2"+"<br>") //Menampilkan data perbandingan equal
+		document.write(val1==val2) //equal
+		document.write("<br>"+"val1!=val2"+"<br>") //Menampilkan data perbandingan not equal
+		document.write(val!=val2) //not equal
+		document.write("<br>"+"val1&gtval2"+"<br>") //Menampilkan data perbandingan greater then
+		document.write(val1>val2)// greater then
+		document.write("<br>"+"val1&ltval2"+"<br>")//Menampilkan data perbandingan less then
+		document.write(val1<val2)//less then
+	}
+</script>
+<body>
+	<input type="button" name="button1" value="relational" onclick=test()><!--  membuat sebuah inputan bertipe button, yang di mana memiliki sebuah value relational, yang berfungsi satu kali klik -->
+</body>
+</html>

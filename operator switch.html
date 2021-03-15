@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program Javascript</title>
+</head>
+<script language ="Javascript">//sebuah bahasa program Javascript
+//Membuat fungsi sub program/objek
+	function test()
+	{
+		val1=window.prompt("input nilai (1-5): ")// val1 mengambil sebuah inputan dari pengguna
+		switch (val1) //percabangan val1
+		{
+			case "1" :
+			document.write("Bilangan satu") //Menampilkan bilangan satu
+			break
+
+			case "2" :
+			document.write("Bilangan dua") //Menampilkan bilangan dua
+			break
+
+			case "3" :
+			document.write("Bilangan tiga") // Menampilkan bilangan tiga
+			break
+
+			case "4" :
+			document.write("Bilangan empat") // menampilkan bilangan empat
+			break
+
+			case "5" :
+			document.write("Bilangan lima") // menampilkan bilangan lima
+			break
+
+			default :
+			document.write("bilangan lainnya") //menampilkan bilangan lainnya jika inputan diluar ketentuan
+		}
+	}
+</script>
+<body>
+	<input type="button" name="button1" value="switch" onclick=test()><!--  membuat sebuah inputan bertipe button, yang di mana memiliki sebuah value switch, yang berfungsi satu kali klik -->
+</body>
+</html>

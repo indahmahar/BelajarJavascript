@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mengkonversi Nilai Angka Ke Huruf</title>
+</head>
+<body>
+	<SCRIPT language="Javascript">
+	//printing tes message
+	var nilai = prompt(" Nilai (0-100): " , 0); //peraturan nilai 0-100 dan dimulai dari angka 0
+	var hasil = ""; //mencetak variabel hasil
+	if (nilai >=0)
+	hasil = "E"; //mengkonversi nilai dari 0-40
+	if (nilai >=41)
+	hasil = "D"; //mengkonversi nilai dari 41-55
+	if (nilai >=56)
+	hasil = "C"; //mengkonversi nilai dari 56-60
+	if (nilai >=61)
+	hasil = "BC"; //mengkonversi nilai dari 61-65
+	if (nilai >=66)
+	hasil = "B";  //mengkonversi nilai dari 66-70
+	if (nilai >=71)
+	hasil = "AB";  //mengkonversi nilai dari 71-80
+	if (nilai >=81)
+	hasil = "A";   //mengkonversi nilai dari 81-100
+	document.write("Hasil: " + hasil); //mencetak hasil telah di koversi
+	</SCRIPT>
+</body>
+</html>
